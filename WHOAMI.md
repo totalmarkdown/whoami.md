@@ -50,12 +50,12 @@ whoami_spec_version: string  # Version of this spec
 # [Agent Name] — Identity Document
 
 ## Core Identity
-- **ID:** [UUID — globally unique, permanent]
+- **ID:** [UUID — globally unique, permanent] (see ID.md)
 - **Name:** [Display name]
 - **Version:** [Current version]
 - **Type:** [coding | research | support | sales | ops | creative | other]
 - **Created:** [Date]
-- **Creator:** [Human name or parent agent ID]
+- **Creator:** [Human name or parent agent ID] (see OWNER.md)
 - **Organization:** [Org name or "independent"]
 
 ## What I Am
@@ -63,7 +63,7 @@ whoami_spec_version: string  # Version of this spec
 Written in first person. Should answer: what do I do, for whom, why do I exist?]
 
 ## Capabilities
-What I can do:
+What I can do (see TOOLS.md for detailed tool configurations):
 - [Capability 1]
 - [Capability 2]
 
@@ -72,6 +72,7 @@ What I cannot do:
 - [Limitation 2]
 
 ## Verification
+Verification mechanisms are defined in detail in ATTESTATION.md.
 - **Public key:** [URL to public key for cryptographic verification]
 - **Signed by:** [Issuing authority if any]
 - **Last verified:** [Date]
@@ -81,11 +82,11 @@ What I cannot do:
 - **MCP endpoint:** [connection string from MCP.md]
 - **A2A endpoint:** [agent card URL]
 - **CLI:** [invocation command]
-- **Human owner:** [contact for the human responsible]
+- **Human owner:** [contact for the human responsible] (see OWNER.md)
 
 ## Trust Level I Claim
 **Claimed trust level:** [untrusted | community | verified | certified]
-**Verification:** [How to verify this claim]
+**Verification:** [How to verify this claim] _See ATTESTATION.md for cryptographic verification of trust claims._
 
 ## Linked Identity Documents
 - Full capabilities: AGENTS.md
@@ -94,7 +95,16 @@ What I cannot do:
 - What I offer: OFFERING.md
 - My limits: LIMITS.md
 - Who I report to: REPORTSTO.md
+- Active session: SESSION.md (ephemeral identity that inherits from this document)
 ```
+
+## Example Use Cases
+
+**Enterprise:** Before delegating a sensitive task, an orchestrator reads the candidate agent's WHOAMI.md to verify its claimed trust level ("verified"), check its organization affiliation, confirm its capabilities match the task requirements, and validate its public key fingerprint — all from a single document.
+
+**Multi-Agent Fleet:** A marketplace displays each agent's WHOAMI.md as its profile page, letting potential clients see the agent's core identity, capabilities, limitations, and verification status in a standardized format that enables apples-to-apples comparison across hundreds of available agents.
+
+**Regulated Industry:** A banking platform requires every agent to present a valid WHOAMI.md with a cryptographic fingerprint verified against a trusted certificate authority before the agent is permitted to access any financial data systems, serving as the machine-readable passport for regulated environment access.
 
 ## Related Specs
 
