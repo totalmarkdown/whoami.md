@@ -15,6 +15,14 @@
 
 ---
 
+
+> **Canonical Source:** This spec is maintained in the main
+> [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs) repository.
+> This repo is an auto-synced mirror for easy discovery and download.
+> To report issues or submit changes, please open a PR or issue on the
+> [main repository](https://github.com/totalmarkdown/agent-md-specs).
+
+
 ## What is WHOAMI.md?
 
 WHOAMI.md is an agent's identity card. It declares the agent's name, role, capabilities, version, and the organization it belongs to. Think of it as a machine-readable profile that other agents and systems can inspect.
