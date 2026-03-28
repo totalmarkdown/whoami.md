@@ -1,6 +1,6 @@
 # WHOAMI.md
 
-> *Defines an AI agent's identity document — who it is, what it does, and how to verify it*
+> *Declares the verifiable identity of an AI agent*
 
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Part of agent-md-specs](https://img.shields.io/badge/part%20of-agent--md--specs-blue)](https://github.com/totalmarkdown/agent-md-specs)
@@ -15,21 +15,19 @@
 
 ---
 
-
 > **Canonical Source:** This spec is maintained in the main
 > [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs) repository.
 > This repo is an auto-synced mirror for easy discovery and download.
 > To report issues or submit changes, please open a PR or issue on the
 > [main repository](https://github.com/totalmarkdown/agent-md-specs).
 
-
 ## What is WHOAMI.md?
 
-WHOAMI.md is an agent's identity card. It declares the agent's name, role, capabilities, version, and the organization it belongs to. Think of it as a machine-readable profile that other agents and systems can inspect.
+WHOAMI.md is the agent's identity card. It declares who the agent is — name, version, model, capabilities, owner, and organizational affiliation — in a structured, auditable format.
 
-Where SOUL.md defines personality, WHOAMI.md defines facts. It answers the questions: What is this agent called? What can it do? Who operates it? How do you verify it's legitimate? This is critical in multi-agent environments where agents need to identify and trust each other.
+It's the first thing compliance teams review before approving an agent deployment, and the first thing other agents check when deciding whether to trust a peer.
 
-Create a WHOAMI.md for any agent that will interact with other agents, be discoverable in a registry, or need to prove its identity and capabilities to external systems.
+Create a WHOAMI.md for any agent deployed in an enterprise environment, interacting with other agents, or requiring identity verification.
 
 ---
 
@@ -45,15 +43,15 @@ Add to your project root and customize for your agent.
 
 ## When to use WHOAMI.md
 
-- Registering an agent in a discovery service so other agents can find and engage it
-- Providing identity verification when an agent connects to a new system or API
-- Declaring capabilities so orchestrators can route tasks to the right agent
+- Any agent deployed in an enterprise environment
+- Agents that need to prove their identity to API gateways or policy engines
+- Multi-agent systems where agents need to identify themselves to each other
 
 ---
 
 ## Where it fits
 
-Pairs with SOUL.md (personality) and HIREME.md (engagement terms). Used by SEEKING.md (discovery) and CONTACT.md (how to reach the agent). Referenced by AGENTS.md and CLAUDE.md.
+Works alongside ID.md (permanent UUID), ATTESTATION.md (cryptographic identity proof), SESSION.md (ephemeral runtime identity), OWNER.md (who is liable), and CONTACT.md (reachable endpoints).
 
 ---
 
