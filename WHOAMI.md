@@ -4,27 +4,22 @@ spec_version: 0.1.0
 category: Identity
 domain: whoamimd.dev
 priority: High
+volume: "Vol 3 — Forward-Thinking Identity"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
-canonical_repo: https://github.com/totalmarkdown/whoami.md
-part_of: https://github.com/totalmarkdown/agent-md-specs
+tier: core
 ---
+
+> **Canonical repository:**
+> [totalmarkdown/whoami.md](https://github.com/totalmarkdown/whoami.md)
+> This copy is included in agent-md-specs for cross-reference.
+> For contributions to this specific spec, use the canonical repo.
 
 # WHOAMI.md
 
 **Category:** Identity
 **Domain:** whoamimd.dev
 **Priority:** High
-**Version:** 0.1.0
-
-> This is the canonical repository for the WHOAMI.md specification.
-> Also part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)
-> — the comprehensive library of 178 agent configuration file type specs.
-
-## WHOAMI.md
-**Category:** Identity  
-**Domain:** whoamimd.dev (register)  
-**Priority:** HIGH — foundational for agent-to-agent trust  
 **Version:** 0.1.0
 
 ### Purpose
@@ -101,9 +96,20 @@ What I cannot do:
 - Who I report to: REPORTSTO.md
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| CONTACT.md | Reachable endpoints |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ID.md | Permanent cryptographic identifier |
+| LIMITS.md | Hard constraints and safety boundaries |
+| MCP.md | Model Context Protocol connections |
+| OFFERING.md | Services offered |
+| OWNER.md | Agent ownership and liability |
 
 ---
 
-*Maintained by TotalMarkdown.ai*
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*
-*License: CC0 1.0 Universal (Public Domain)*
+*Maintained by TotalMarkdown.ai · License: CC0 1.0 Universal*
